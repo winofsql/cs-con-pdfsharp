@@ -1,5 +1,5 @@
 ﻿using PdfSharp.Fonts;
-using System.Diagnostics;
+using System;
 using System.IO;
 
 namespace cs_con_pdfsharp {
@@ -27,7 +27,7 @@ namespace cs_con_pdfsharp {
 			}
 			catch (FileNotFoundException ex)
 			{
-				Debug.WriteLine(ex.Message);
+				Console.WriteLine(ex.Message);
 			}
 
 			return null;
